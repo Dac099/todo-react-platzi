@@ -6,6 +6,7 @@ const TodosContext = createContext();
 function TodosContextProvider(props) {
   const [todos, setTodos] = useLocalStorage("todos", []);
   const [searchValue, setSearchValue] = useState("");
+  const [openModal, setOpenModal] = useState(false);
 
   let todos_filtered = [];
 
@@ -65,7 +66,9 @@ function TodosContextProvider(props) {
         createTask,
         deleteTask,
         completeTask,
-        deleteAll
+        deleteAll,
+        openModal,
+        setOpenModal
       }}
     >
       {props.children}

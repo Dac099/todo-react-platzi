@@ -5,12 +5,10 @@ import { TodosContext } from "../context/TodosContext";
 import "../styles/TodoMachine.css";
 
 function TodoMachine() {
-  const { deleteAll } = useContext(TodosContext);
+  const { deleteAll, setOpenModal } = useContext(TodosContext);
 
   function handleClick() {
-    const modal = document.querySelector(".modal-window");
-    modal.classList.remove("hide");
-    modal.classList.add("show");
+    setOpenModal(true);
   }
 
   return (
