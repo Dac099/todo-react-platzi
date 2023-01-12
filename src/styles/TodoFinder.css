@@ -1,0 +1,77 @@
+.todo-search
+{
+  background-color: #A054E2;
+  max-width: 600px;
+  height: 100px;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 2px 2px 0px 1px rgb(140, 54, 190);
+  border: 3px solid rgb(70, 23, 133);
+}
+
+.todo-search--input
+{
+  height: 40px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #d29eff;
+  color: white;
+  font-size: 16px;
+}
+
+.todo-search--input::placeholder
+{
+  color: rgb(157, 77, 222);
+  font-weight: bold;
+}
+
+.todo-search--input:focus-visible
+{
+  outline: none;
+}
+
+.todo-search--btn
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px dashed #430579;
+  background-color: #d29eff;
+  cursor: pointer;
+}
+
+.todo-search--btn:hover
+{
+  transform: scale(1.2);
+}
+
+.shake
+{
+  animation: shake 200ms ease-out 0s infinite both;
+}
+
+@keyframes shake
+{
+  from {
+    transform: translateX(-10px);
+  }
+
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .todo-search
+  {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,115 @@
+.modal-window
+{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  place-content: center;
+  gap: 20px;
+  background-color: rgba(39, 37, 40, 0.9);
+}
+
+.close-btn
+{
+  width: 30px;
+  height: 30px;
+  justify-self: flex-end;
+  color: #ffb6c1;
+  border: 1px solid #821c2a;
+  background-color: #821c2a;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn:hover
+{
+  transform: scale(1.5);
+}
+
+.modal-todo
+{
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 10px;
+  border: 3px solid rgb(70, 23, 133);
+  box-shadow: 2px 2px 0px 1px rgb(140 54 190);
+  background-color: #a054e2;
+}
+
+.modal-todo svg
+{
+  width: 50px;
+  height: 50px;
+  color: #d29eff;
+  border: 1px solid rgb(70, 23, 133);
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgb(70, 23, 133);
+}
+
+.modal-todo input
+{
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 5px;
+  background-color: #d29eff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-todo input::placeholder
+{
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modal-todo input:focus-visible
+{
+  outline: none;
+}
+
+.modal-todo button
+{
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 5px;
+  background-color: #f5f560;
+  color: #6b620c;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid #6b620c;
+}
+
+.modal-todo button:hover
+{
+  background-color: #6b620c;
+  color: #f5f560;
+  border: 3px solid #f5f560;
+  box-shadow: 2px 2px 0px 0px #f5f560;
+}
+
+.hide
+{
+  display: none;
+}
+
+.show
+{
+  display: grid;
+}
