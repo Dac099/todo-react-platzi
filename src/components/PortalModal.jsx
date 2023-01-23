@@ -1,12 +1,10 @@
 import ReactDOM from "react-dom";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "../styles/ModalTodo.css";
 import { RiBookMarkFill, RiCloseLine } from "react-icons/ri";
-import { TodosContext } from "../context/TodosContext";
 
-export default function PortalModal() {
+export default function PortalModal({ createTask, setOpenModal }) {
   const [todo, setTodo] = useState("");
-  const { createTask, setOpenModal } = useContext(TodosContext);
 
   function handleClick() {
     if (todo.length === 0) {

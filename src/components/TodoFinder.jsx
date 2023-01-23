@@ -1,9 +1,7 @@
-import React, { useContext } from "react";
-import { TodosContext } from "../context/TodosContext";
+import React from "react";
 import "../styles/TodoFinder.css";
 
-function TodoFinder() {
-  const { searchValue, setSearchValue } = useContext(TodosContext);
+function TodoFinder({searchValue, setSearchValue}) {
 
   return (
     <form className="todo-search">

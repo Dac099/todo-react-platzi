@@ -1,9 +1,7 @@
-import React, { useContext } from "react";
-import { TodosContext } from "../context/TodosContext";
+import React from "react";
 import "../styles/TodoCounter.css";
 
-function TodoCounter() {
-  const { todos } = useContext(TodosContext);
+function TodoCounter({todos}) {
 
   function percentage() {
     let todos_completed = todos.filter(

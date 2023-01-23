@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import { RiAddFill } from "react-icons/ri";
 import { TbTrashX } from "react-icons/tb";
-import { TodosContext } from "../context/TodosContext";
 import "../styles/TodoMachine.css";
 
-function TodoMachine() {
-  const { deleteAll, setOpenModal } = useContext(TodosContext);
+function TodoMachine({setOpenModal, deleteAll}) {
 
   function handleClick() {
     setOpenModal(true);
